@@ -13,15 +13,15 @@ app.get('/', (req, res) => {
 	res.send('Hello Express app');
 });
 
-app.get('/api/echo/:param*', (req, res) => {
+app.get('/api/data/:param*', (req, res) => {
 	res.send(req.params.param);
 });
 
-app.get('/api/echodbl/:param1/:param2', (req, res) => {
+app.get('/api/datadbl/:param1/:param2', (req, res) => {
 	res.send(req.params.param1 + ', ' + req.params.param2);
 });
 
-app.get('/api/echoquery/*', (req, res) => {
+app.get('/api/dataquery/*', (req, res) => {
 	res.send(req.query.q);
 });
 
